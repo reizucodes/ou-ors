@@ -3,10 +3,13 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-5">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
+                <div class="card-header text-center p-auto">
+                    <img class=" card-img-top" src="/img/buou.png" alt="Logo">
+                    <p class="m-auto">Register as an applicant</p>
+                    <p class="m-auto"><a class="text-decoration-none" href="{{ route('login') }}">Sign in to your account</a></p>
+                </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
