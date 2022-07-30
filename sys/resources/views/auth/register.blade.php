@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container"style="margin-top:5%; margin-bottom:5%">
+<div class="container" style="margin-top:5%; margin-bottom:5%">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card">
@@ -55,6 +55,10 @@
                                 </span>
                                 @enderror
                             </div>
+                        </div>
+                        <!--Default Role-->
+                        <div hidden>
+                            <input id="role" type="number" name="role_id" value="5">
                         </div>
                         <!--END OF ADDED FIELDS-->
                         <div class="row mb-3">
